@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CloudBazaar FAQ</title>
+    <!-- Include your CSS files -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <style>
+        /* Additional CSS for FAQ */
+        .faq-item {
+            cursor: pointer; /* Add pointer cursor to indicate clickability */
+            border-bottom: 1px solid #ccc; /* Add border between FAQ items */
+            padding-bottom: 1rem; /* Add some padding between FAQ items */
+        }
+        .faq-item h3 {
+            margin-bottom: 0.5rem; /* Add some spacing between question and answer */
+        }
+        .faq-item p {
+            display: none; /* Initially hide the answer */
+            margin-top: 0.5rem; /* Add some spacing between questions and answers */
+        }
+        .faq-item.active p {
+            display: block; /* Display the answer when the question is clicked */
+        }
+    </style>
+</head>
+<body>
+
+    <!-- FAQ Section -->
+    <div id="faq" class="lr-pad">
+        <div class="b-container">
+            <div class="head-text">
+                <h2 class="head-title">Frequently Asked <span>Questions</span></h2>
+                <p class="head-desc">Find answers to the most common questions about our products and services.</p>
+            </div>
+            <div class="faq-box">
+                <div class="faq-item">
+                    <h3>What is CloudBazaar?</h3>
+                    <p>CloudBazaar is an online marketplace where you can find a variety of products at competitive prices.</p>
+                </div>
+                <div class="faq-item">
+                    <h3>How do I place an order?</h3>
+                    <p>Browse our products, add your desired items to the cart, and proceed to checkout to place your order.</p>
+                </div>
+                <div class="faq-item">
+                    <h3>What payment methods do you accept?</h3>
+                    <p>We accept various payment methods, including credit/debit cards, PayPal, and other online payment options.</p>
+                </div>
+                <div class="faq-item">
+                    <h3>How can I track my order?</h3>
+                    <p>Once your order is shipped, we will send you a tracking number via email, which you can use to track your order.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="c-box">
+        <div class="box">
+            <div class="icon"><i class="fa-solid fa-envelope-open"></i></div>
+            <div class="text">
+                <h3>Mail Here</h3>
+                <p>cloudbazzar@gmail.com</p>
+                <p>shivamkorgaonkar2021@gmail.com</p>
+            </div>
+        </div>
+        <div class="box">
+            <div class="icon"><i class="fa-solid fa-map"></i></div>
+            <div class="text">
+                <h3>Visit Here</h3>
+                <p>Vasco-da-gama</p>
+                <p>403710,Goa,India</p>
+            </div>
+        </div>
+        <div class="box">
+            <div class="icon"><i class="fa-solid fa-headset"></i></div>
+            <div class="text">
+                <h3>Call Here</h3>
+                <p>+91 7507986584</p>
+                <p>=+91 9356983627</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+    <!-- Footer Section -->
+    <footer>
+        <div class="footer-container lr-pad">
+            <div class="footer-left">
+                <h2>CloudBazaar</h2>
+                <p>Your one-stop online shop.</p>
+            </div>
+            <div class="footer-right">
+                <p>&copy; 2024 CloudBazaar. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Include your JavaScript files -->
+    <!-- Ensure to include any scripts that may be necessary for your functionality -->
+    <script src="https://cdn.jsdelivr.net/npm/ionicons@5.5.2/dist/ionicons.js"></script>
+    <script src="assets/js/script.js"></script>
+    <script>
+        // JavaScript for FAQ functionality
+        document.addEventListener('DOMContentLoaded', function() {
+            const faqItems = document.querySelectorAll('.faq-item');
+
+            faqItems.forEach(function(item) {
+                item.addEventListener('click', function() {
+                    // Toggle the active class to show/hide the answer
+                    this.classList.toggle('active');
+                });
+            });
+        });
+    </script>
+</body>
+</html>
